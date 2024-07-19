@@ -1,0 +1,9 @@
+service: "service:LLMGateway"
+include:
+- "*.py"
+python:
+  requirements_txt: "./requirements.txt"
+  lock_packages: false
+envs:
+  - name: HF_TOKEN
+  - name: OPENAI_API_KEY
