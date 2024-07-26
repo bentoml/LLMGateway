@@ -25,4 +25,4 @@ if STREAM:
         # Extract and print the content of the model's reply
         print(chunk.choices[0].delta.content or "", end="")
 else:
-    print(chat_completion)
+    print(chat_completion.choices[0].message.content)
