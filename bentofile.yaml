@@ -6,4 +6,3 @@ python:
   lock_packages: false
 envs:
   - name: HF_TOKEN
-  - name: OPENAI_API_KEY
