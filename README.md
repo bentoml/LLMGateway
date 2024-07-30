@@ -2,20 +2,20 @@
 
 LLMGateway is an example project that demonstrates how to build a gateway application that works with different LLM APIs using [BentoML](https://github.com/bentoml/BentoML). LLMGateway supports private LLM APIs like OpenAI and open-source LLM deployments such as Llama and Mistral. The project offers a unified API interface that makes it easier to work with different LLMs. In addition, LLMGateway demonstrates how to integrate with tools for detecting harmful prompts to keep usage safe and caching to make the LLMs more efficient.
 
-# Prerequisites
+## Prerequisites
 
 - You have installed Python 3.8+ and pip. See the Python downloads page to learn more.
 - You have a basic understanding of key concepts in BentoML, such as Services. We recommend you read Quickstart first.
 - (Optional) We recommend you create a virtual environment for dependency isolation for this project. See the Conda documentation or the Python documentation for details.
 
-# Install dependencies
+## Install dependencies
 
 ```
 git clone https://github.com/bentoml/BentoSentenceTransformers.git
 cd BentoSentenceTransformers
 pip install -r requirements.txt
 ```
-# Run the LLM gateway
+## Run the LLM gateway
 
 We have defined a BentoML Service in service.py. Run bentoml serve in your project directory to start the Service on your laptop.
 
@@ -37,7 +37,7 @@ bentoml deploy .
 
 Once the application is up and running on BentoCloud, you can access it via the exposed URL.
 
-# Test
+## Test
 
 Prepare the test client.
 ```
